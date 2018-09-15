@@ -12,17 +12,6 @@ dictionary = {
 }
 end
 
-# You can use regex or, check out the solution below that
-# def word_substituter(tweet)
-#   tweet = tweet.dup
-#   dictionary.each do |word, replacement|
-#     if tweet.include?(word)
-#       tweet.gsub!(/\b#{word}\b/i, replacement)
-#     end
-#   end
-#   tweet
-# end
-
 
 def word_substituter(tweet)
   tweet.split.collect do |word|
